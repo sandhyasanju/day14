@@ -1,0 +1,671 @@
+<!doctype html>
+<html>
+<head>
+  <title>Finday form</title>
+  <meta charset="utf-8">
+  <script src = "jquery-1.11.3.min.js"></script>
+  <script type = "text/javascript" src = "newform.js"></script>
+  <link rel = "stylesheet" type="text/css" href="hyphen.css">
+  <link rel = "stylesheet" type="text/css" href="newform.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- This is the div for the header-->
+  <div class = "grid" id = "header">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <h1>REGISTRATION FORM</h1>
+    </div>
+  </div>
+  <!-- header div close-->
+  <br><br>
+
+
+  <div class = "grid">
+    <div class = "grid__item grid__item--2">
+      <span class = "span"></span>
+    </div>
+    <!-- to show the navigation bar and tabbed layout-->
+    <div class = "grid__item grid__item--8" id = "navigation">
+      <nav>
+        <ul>
+          <li><a onclick = "personal()" href = "#">Personal Information</a></li>
+          <li><a onclick = "addition()" href = "#">Additional Information</a></li>
+          <li><a onclick = "contact()" href = "#">Contact Information</a></li>
+          <li><a onclick = "qualification()" href = "#">Academic Qualification</a></li>
+          <li><a onclick = "finish()" href = "#">Finish</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br><br><br>
+  </div>
+
+
+  <!-- personal information tab-->
+  <div id = "personalInformation">
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--8">
+        <label class = "label1"><center>Personal Information<hr></center></label>
+      </div>
+    </div>
+    <br><br>
+
+
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">Full name:<br>(as per matriculation)</label>
+      </div>
+      <div class = "grid__item grid__item--4">
+        <input type = "input" class = "input">
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">last name: (optional)</label>
+      </div>
+      <div class = "grid__item grid__item--2">
+        <input type = "input" class = "input">
+      </div>
+    </div><br>
+
+
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>Select Title</label>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <select type = "select" class = "input">
+          <option value="1">--select---</option>
+          <option value="2">Mr</option>
+          <option value="3">Mrs</option>
+          <option value="4">Miss</option>
+          <option value="5">None</option>
+        </select>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <center><label class = "label"><br>gender:</label></center>
+      </div>
+      <div class = "grid__item grid__item--2">
+        <input class = "input input--disabled">
+      </div>
+    </div><br><br>
+
+
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">Date Of Birth: (DD/MM/YYYY)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <div class = "input-icon input-icon--right">
+          <i class="fa fa-calendar input-icon__icon"></i>
+          <input class = "input input-icon__input">
+        </div>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <center><label class = "label">Age: (Years Months Days)</label></center>
+      </div>
+      <div class = "grid__item grid__item--2">
+        <input class = "input input--disabled">
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--10 ">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <button class = "btn btn--success btn--default btn--round" id = "button1">Next</button>
+      </div>
+    </div>
+    <br><br><br>
+  </div>
+
+
+  <!--additional informatiom -->
+  <div id = "additionalInformation">
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--8">
+        <label class = "label1"><center>Additional Information<hr></center></label>
+      </div>
+    </div>
+
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>Father's Name:</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">  <br> Mother's Name</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">  Mother's maiden Name:</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+
+    <div class = "grid">
+      <div class = "grid__item grid__item--2">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>Country</label>
+      </div>
+      <div class = "grid__item grid__item--2">
+        <select type = "select" class = "input">
+          <option value="1">--select---</option>
+          <option value="2">India</option>
+          <option value="3">China</option>
+          <option value="4">Nepal</option>
+          <option value="5">Sri Lanka</option>
+        </select>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>Nationality</label>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <select type = "select" class = "input">
+          <option value="1">--select---</option>
+          <option value="2">Hindu</option>
+          <option value="3">Muslim</option>
+          <option value="4">Jain</option>
+          <option value="5">Christian</option>
+        </select>
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--1">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <button class = "btn btn--success btn--default btn--round" id = "button2">Back</button>
+      </div>
+      <div class = "grid__item grid__item--8">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <button class = "btn btn--success btn--default btn--round" id = "button3">Next</button>
+      </div>
+    </div>
+
+    <br><br><br>
+  </div>
+  <!-- additional information closed-->
+
+
+  <!-- contact information -->
+  <div id = "contactInformation">
+    <div class = "grid">
+      <div class = "grid__item grid__item--5">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--2">
+        <label class = "label1"><center>Contact Information</center></label>
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--1">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--10">
+        <span class = "span"><hr></span>
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">Adress Line1 (e.g., D.no:)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">Adress Line2 (e.g., Street name:)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">Adress Line3 (optional)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label">Land mark (if any)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>District (select)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <select class = "input">
+        </select>
+      </div>
+    </div>
+
+<!-- selection of the state or ut-->
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>State (select)</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <select class = "input">
+          <option value="1">----select----</option>
+            <option value="2">Andhra Prradesh</option>
+            <option value="2">Arunachal Pradesh</option>
+            <option value="3">Assam</option>
+            <option value="4">Bihar</option>
+            <option value="5">Chattisgarh</option>
+            <option value="6">Goa</option>
+            <option value="7">Gujarath</option>
+            <option value="8">Haryana</option>
+            <option value="9">Himachal Pradesh</option>
+            <option value="10">Jammu & Kashmir</option>
+            <option value="11">Jharkandh</option>
+            <option value="12">Karnataka</option>
+            <option value="13">Kerala</option>
+            <option value="14">Madhya Pradesh</option>
+            <option value="15">Maharashtra</option>
+            <option value="16">Manipur</option>
+            <option value="17">Meghalaya</option>
+            <option value="18">Mizoram</option>
+            <option value="19">Nagaland</option>
+            <option value="20">Odhisa</option>
+            <option value="21">Punjab</option>
+            <option value="22">Rajasthan</option>
+            <option value="23">Sikkim</option>
+            <option value="24">Tamil Nadu</option>
+            <option value="25">Telangana</option>
+            <option value="26">Tripura</option>
+            <option value="27">Uttar Pradesh</option>
+            <option value="28">Uttarakhand</option>
+            <option value="29">West Bengal</option>
+            <option value="30">Andaman and Nicobar islands</option>
+            <option value="31">Chandigarh</option>
+            <option value="32">Dadra and nagar Haveli</option>
+            <option value="33">Daman and Diu</option>
+            <option value="34">Lakshadweep</option>
+            <option value="35">Delhi</option>
+            <option value="36">Puducherry</option>
+        </select>
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>Contact No:</label>
+      </div>
+      <div class = "grid__item grid__item--3">
+        <input class = "input">
+      </div>
+    </div>
+    <div class = "grid">
+      <div class = "grid__item grid__item--4">
+        <span class = "span"></span>
+      </div>
+      <div class = "grid__item grid__item--1">
+        <label class = "label"><br>email:</label>
+      </div>
+      <div class = "grid__item grid__item--2">
+        <input class = "input">
+      </div>
+      <div class = "grid__item grid__item--1">
+        <center><span id = "label" class = "span" ><center>@</center></span></center>
+      </div>
+      <div class = "grid__Item grid__item--2">
+        <select class = "input" id ="select">
+          <option value = "1">-----select-----</option>
+          <option value = "2">gmail.com</option>
+          <option value = "3">hotmail.com</option>
+          <option value = "4">outlook.com</option>
+          <option value = "5">yahoomail.com</option>
+        </select>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--1">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--1">
+      <button class = "btn btn--success btn--default btn--round" id = "button4">Back</button>
+    </div>
+    <div class = "grid__item grid__item--8">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--1">
+      <button class = "btn btn--success btn--default btn--round" id = "button5">Next</button>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+
+<!--contact information closed-->
+
+
+<!--educational qualification-->
+<div id = "qualification">
+  <div class = "grid">
+    <div class = "grid__item grid__item--2">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--8">
+      <label class = "label1"><center>Academic qualification<hr></center></label>
+    </div>
+  </div>
+
+
+  <div class = "grid">
+    <div class = "grid__item grid__item--2">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--9">
+      <table>
+        <thead>
+          <td align = "center">STUDY</td>
+          <td align = "center">School/College</td>
+          <td align = "center">Year Of Passing</td>
+          <td align = "center">Percentage</td>
+        </thead>
+        <tr>
+          <td align = "right">
+            <select class = "input">
+              <option value = "1">-----select-----</option>
+              <option value = "2">SSC</option>
+              <option value = "3">Intermediate/+2</option>
+              <option value = "4">Degree</option>
+              <option value = "5">P.G</option>
+              <option value = "5">Others(specify)</option>
+            </select>
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+        </tr>
+        <tr>
+          <td align = "right">
+            <select class = "input">
+              <option value = "1">-----select-----</option>
+              <option value = "2">SSC</option>
+              <option value = "3">Intermediate/+2</option>
+              <option value = "4">Degree</option>
+              <option value = "5">P.G</option>
+              <option value = "5">Others(specify)</option>
+            </select>
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+        </tr>
+        <tr>
+          <td align = "right">
+            <select class = "input">
+              <option value = "1">-----select-----</option>
+              <option value = "2">SSC</option>
+              <option value = "3">Intermediate/+2</option>
+              <option value = "4">Degree</option>
+              <option value = "5">P.G</option>
+              <option value = "5">Others(specify)</option>
+            </select>
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+        </tr>
+        <tr>
+          <td align = "right">
+            <select class = "input">
+              <option value = "1">-----select-----</option>
+              <option value = "2">SSC</option>
+              <option value = "3">Intermediate/+2</option>
+              <option value = "4">Degree</option>
+              <option value = "5">P.G</option>
+              <option value = "5">Others(specify)</option>
+            </select>
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+        </tr>
+        <tr>
+          <td align = "right">
+            <select class = "input">
+              <option value = "1">-----select-----</option>
+              <option value = "2">SSC</option>
+              <option value = "3">Intermediate/+2</option>
+              <option value = "4">Degree</option>
+              <option value = "5">P.G</option>
+              <option value = "5">Others(specify)</option>
+            </select>
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+          <td align = "right">
+            <input class = "input">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--1">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--1">
+      <button class = "btn btn--success btn--default btn--round" id = "button6">Back</button>
+    </div>
+    <div class = "grid__item grid__item--8">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--1">
+      <button class = "btn btn--success btn--default btn--round" id = "button7">Next</button>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+<!-- qualification closed-->
+
+
+<!-- finishing of register-->
+<div id = "finish">
+  <div class = "grid">
+    <div class = "grid__item grid__item--12">
+      <center>
+        <label class = "label">TO finish your registration with us please give your user name and password and then finish the registration
+        </label>
+      </center>
+    </div>
+  </div>
+
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <label class = "label1">User Name<sup>*</sup></label>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <div class = "input-icon input-icon--right">
+        <i class="fa fa-user input-icon__icon"></i>
+        <input class = "input input-icon__input">
+      </div>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <label class = "label1">Password(Atleast 8 characters)<sup>*</sup></label>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <div class = "input-icon input-icon--right">
+        <i class="fa fa-lock input-icon__icon"></i>
+        <input class = "input input-icon__input">
+      </div>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <label class = "label1">Re-enter the password<sup>*</sup></label>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <div class = "input-icon input-icon--right">
+        <i class="fa fa-pencil-square-o input-icon__icon"></i>
+        <input class = "input input-icon__input">
+      </div>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <label class = "label1">Register</label>
+      <i class="fa fa-registered" id = "register"></i>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--4">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--4">
+      <button class = "btn btn--secondary btn--large btn--round" id = "button8">Register</button>
+    </div>
+  </div>
+  <div class="grid" id = "alert">
+    <div class = "grid__item grid__item--3">
+      <span class = "span"></span>
+    </div>
+    <div class="grid__item grid__item--6">
+      <div class="alert alert--warning">
+        <b class="text text--warning">Warning!</b> You are about to finish to <b>continue</b> finishing <b>tick the checkbox</b>
+        <div class="alert__close alert--warning__close">
+          <i class="fa fa-close"></i>
+          <input type = "checkbox" id = "checkbox">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class = "grid">
+    <div class = "grid__item grid__item--1">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--1">
+      <button class = "btn btn--success btn--default btn--round" id = "button9">Back</button>
+    </div>
+    <div class = "grid__item grid__item--8">
+      <span class = "span"></span>
+    </div>
+    <div class = "grid__item grid__item--1">
+      <button class = "btn btn--success btn--default btn--round" id = "button10">Finish</button>
+    </div>
+  </div>
+  <br><br><br>
+</div>
+</body>
+</html>

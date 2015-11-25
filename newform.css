@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(to right, #C0C0C0 1%, #FFFFFF 50%);
+  border: 10px solid #B0B0B0;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 24px;
+}
+#header {
+  background: #FFCCFF;
+  color: #9966FF;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+span {
+  margin: 5px;
+}
+.total {
+  display: inline;
+}
+.icons {
+  background: #001766;
+
+  cursor: pointer;
+  margin-left: 12px;
+  margin-right: 36px;
+  padding: 15px;
+}.navigation {
+  display: ta
+}
+#navigation{
+
+}
+ nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  border: solid;
+  border-width: 1px 1px 0 1px;
+  display: inline;
+  margin: 0 5px 0 0;
+}
+nav ul li a {
+  background: white;
+  color: blue;
+}
+nav ul li a:hover {
+  background: blue;
+  color:white;
+}
+a {
+  color: white;
+}
+a:active , a:hover {
+  background: white;
+  color: blue;
+}
+.homepage {
+  color: blue;
+  display: none;
+  font-size: 30px;
+}
+.label {
+  color: #CC33FF;
+  font-size: 15px;
+}
+#label {
+  color: black;
+  padding: 10px;
+}
+#personalInformation , #additionalInformation , #contactInformation , #qualification, #finish , #alert{
+  display: none;
+}
+#button8 {
+  width: 100%;
+}
+#register {
+  float: right;
+}
